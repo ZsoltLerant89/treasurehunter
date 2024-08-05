@@ -1,0 +1,43 @@
+
+div{
+	box-sizing: border-box;
+	float: left;
+}
+
+.row{
+	width: 100%;
+	padding-left: 25%;
+
+}
+
+.column{
+	width: 150px;
+	height: 150px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-image: url("th_background.jpg") ;
+	background-size: 150px 150px;
+
+}
+
+
+.treasureBuild{
+	background-image: url("treasure.jpg") ;
+	background-size: 150px 150px;
+}
+
+.skullBuild{
+	background-image: url("skull.jpg") ;
+	background-size: 150px 150px;
+}
+
+p{
+	color: black;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(186, 218, 186);
+    padding: 5px;
+	margin: 0px;
+}

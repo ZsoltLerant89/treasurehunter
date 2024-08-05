@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Result</title>
+		<link rel="stylesheet" th:href="@{/resultstyle.css}"/>
+		<script type="text/javascript" th:src="@{/result.js}">
+		
+		</script>
+	</head>
+	<body >
+			<p th:text="${userDTO.getName()}" style="font-size: 30px; text-align:center;"></p>
+			<form action="/login" method="post" align="center">
+ 				<input type="hidden" name="username" th:value="${userDTO.getName()}" />
+				<input type="hidden" name="pwd" value="1234" >
+ 				<input type="submit" value="New game" class="newgame"/>
+ 			</form>
+ 			<div th:if="${userDTO.isWin() == false}">
+ 				<p id="lose" style="color: red; text-align:center; font-size: 60px;">You lose!</p>
+ 			</div>
+ 			<div th:if="${userDTO.isWin() == true}">
+ 				<p th:text="${'Current steps: ' + userDTO.getCurrentSteps()}" style="font-size: 20px; text-align:center;"></p>
+ 				<p th:text="${'Record steps: ' + userDTO.getRecordSteps()}" style="font-size: 20px; text-align:center;"></p>
+ 				<p id="win" style="color: green; text-align:center; font-size: 60px;" >You win!</p>
+ 			</div>
+ 			
+ 			
+ 			
+	</body>
+</html>

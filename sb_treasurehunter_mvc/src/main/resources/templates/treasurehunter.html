@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Treasure hunter</title>
+		<link rel="stylesheet" th:href="@{/style.css}"/>
+		<script type="text/javascript" th:src="@{/hunter.js}"></script>
+	</head>
+	<body>
+		<div class="row">
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+        </div>
+
+        <div class="row">
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+        </div>
+
+        <div class="row">
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+        </div>
+        
+        <div class="row">
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+        </div>
+        
+        <div class="row">
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+            <div class="column"> </div>
+        </div>
+        
+        <p th:text="${'User: ' + userDTO.getName()}"></p>
+        <p th:text="${'Record steps: ' + userDTO.getRecordSteps()}"></p>
+        
+        <p id="clicked">Clicked: 0</p>
+        
+        <form action="/save" method="post" style="display: none;">
+        	<input type="number" name="userid" th:value="${userDTO.getId()}"/>
+        	<input type="number" name="win" id="winId"/>
+        	<input type="number" name="clicked" id="clickedFromId"/>
+        	<input type="submit" id="submitId" />
+        </form>
+	</body>
+</html>

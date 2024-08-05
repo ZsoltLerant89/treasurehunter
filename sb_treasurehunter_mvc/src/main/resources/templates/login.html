@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link rel="stylesheet" th:href="@{/loginstyle.css}"/>
+	</head>
+	<body>
+		<form action="/login" method="post">
+			<p>Please login</p>
+			<input type="text" name="username" placeholder="Name" required class="logininput" /><br/>
+			<input type="password" name="pwd" placeholder="Password" required class="logininput" /><br/>
+			<input type="submit" value="Login" class="logininput" />
+		</form>
+	</body>
+</html>
