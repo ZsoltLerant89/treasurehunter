@@ -8,7 +8,7 @@
 		<!-- Database connection settings --> 
 		
 		<property name="connection.driver_class">org.postgresql.Driver</property>
-		<property name="connection.url">jdbc:postgresql://dpg-cqodma5ds78s73bv4lkg-a/treasurehunterdb_a00a</property> 
+		<property name="connection.url">jdbc:postgresql://dpg-cqodma5ds78s73bv4lkg-a.frankfurt-postgres.render.com/treasurehunterdb_a00a</property> 
 		<property name="connection.username">root</property> 
 		<property name="connection.password">zWhQZHaVxsMaimbwZ5hEq5o549Rr0WQV</property>
 		
